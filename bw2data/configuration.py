@@ -12,7 +12,7 @@ import warnings
 from .filesystem import check_dir
 
 # os.getenv returns unicode in Py2
-eight.wrap_os_environ_io()
+# eight.wrap_os_environ_io()
 
 
 class Config(object):

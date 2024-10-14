@@ -20,7 +20,7 @@ import os
 import pytest
 import tempfile
 
-eight.wrap_os_environ_io()
+# eight.wrap_os_environ_io()
 
 ###
 ### Basic setup

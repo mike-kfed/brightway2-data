@@ -104,7 +104,7 @@ class ProjectManager(Iterable):
     ### Internal functions for managing projects
 
     def _get_base_directories(self):
-        eight.wrap_os_environ_io()
+        # eight.wrap_os_environ_io()
         envvar = os.getenv("BRIGHTWAY2_DIR")
         if envvar:
             if not os.path.isdir(envvar):
@@ -198,7 +198,7 @@ class ProjectManager(Iterable):
         Returns output directory path.
 
         """
-        eight.wrap_os_environ_io()
+        # eight.wrap_os_environ_io()
         ep, pp = os.getenv('BRIGHTWAY2_OUTPUT_DIR'), config.p.get('output_dir')
         if ep and os.path.isdir(ep):
             return ep
